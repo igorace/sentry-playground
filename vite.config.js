@@ -9,7 +9,9 @@ const viteSentryConfig = {
   org: "igorace",
   project: "javascript-vue",
   release: `${process.env.npm_package_name}@${process.env.npm_package_version}`,
-  setCommits: {},
+  setCommits: {
+    auto: true,
+  },
   sourceMaps: {
     include: ["./dist/assets"],
     ignore: ["node_modules"],
